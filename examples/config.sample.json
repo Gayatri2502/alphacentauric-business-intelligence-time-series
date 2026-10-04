@@ -1,0 +1,32 @@
+{
+  "date_column": "date",
+  "value_column": "market_size_usd_million",
+  "filters": {"country": "Germany"},
+  "unit": "USD million",
+  "metric_kind": "level",
+  "frequency": "monthly",
+  "aggregation": "mean",
+  "missing_policy": "reject",
+  "combine_segments": false,
+  "dayfirst": false,
+  "model": "SARIMA",
+  "season": 12,
+  "horizon": 12,
+  "confidence": 95,
+  "validation_folds": 3,
+  "calibrate_intervals": true,
+  "upside_growth": 5,
+  "downside_growth": -5,
+  "window_start": "",
+  "batch_column": "",
+  "driver_column": "",
+  "future_driver": [],
+  "review_accepted": false,
+  "source_evidence": {
+    "publisher": "Alphacentauric demonstration generator",
+    "url": "Local synthetic sample",
+    "publication_date": "",
+    "figure_type": "synthetic",
+    "methodology": "Synthetic trend, seasonality and noise; not measured market evidence."
+  }
+}

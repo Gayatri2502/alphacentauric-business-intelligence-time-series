@@ -1,0 +1,13 @@
+flowchart LR
+  History[Prepared chronological series] --> First[Earliest training window]
+  First --> Orders[Select ARIMA or SARIMA order by AIC]
+  Orders --> Rolling[3 to 6 expanding validation windows]
+  Rolling --> Select[Candidate selection and ensemble components]
+  Rolling --> Radius[Absolute-error radius for widen-only intervals]
+  Select --> Holdout[Untouched final chronological test]
+  Radius --> Holdout
+  Holdout --> Evidence[Error coverage and naive baseline evidence]
+  Evidence --> Refit[Refit selected model using complete selected history]
+  Refit --> Future[Future forecast and nominal bounds]
+  Radius --> Future
+  Future --> Scenarios[User-assumed upside and downside multipliers]

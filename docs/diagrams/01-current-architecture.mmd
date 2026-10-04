@@ -1,0 +1,13 @@
+flowchart LR
+  User[Market analyst] --> UI[Browser dashboard]
+  UI -->|Local JSON requests| API[app.py HTTP service]
+  API --> Prepare[bi_engine.py parse and prepare]
+  API --> Models[bi_plus.py review and forecast]
+  Models --> Prepare
+  Models --> Stats[statsmodels and scipy]
+  Models --> Export[PDF HTML CSV JSON evidence]
+  Export --> R[r_exports.py Rmd and R checks]
+  API --> Disk[var reports projects charts]
+  Disk --> API
+  API -->|JSON and downloadable files| UI
+  UI --> SVG[charts.js interactive SVG]

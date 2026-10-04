@@ -1,0 +1,6 @@
+flowchart LR
+  Saved[Existing completed analysis] --> Edit[Analyst edits commentary]
+  Edit --> Version[New report id linked to revision_of]
+  Saved -->|Reuse same numerical evidence| Version
+  Version --> Exports[New PDF HTML JSON Rmd and ZIP]
+  Saved --> Preserved[Original report remains]

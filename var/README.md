@@ -1,0 +1,1 @@
+Generated user data belongs here. reports/ contains evidence and export bundles; projects/ contains saved source.bin snapshots and configuration; charts/ contains downloaded SVGs. Back up this folder before relocating or updating the app. Uploads remain in memory until explicitly saved as projects. The release ZIP includes empty folders, not existing user data.

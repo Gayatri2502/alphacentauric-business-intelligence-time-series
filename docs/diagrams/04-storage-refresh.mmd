@@ -1,0 +1,10 @@
+flowchart TD
+  File[Original local CSV or Excel] -->|Manual upload| RAM[Active dataset in memory]
+  RAM -->|Save project| Snapshot[var/projects/id source.bin and project.json]
+  Snapshot -->|Load snapshot and verify hash| RAM
+  RAM -->|Analyze| Report[var/reports/id evidence and exports]
+  Report -->|Open saved analysis| Browser[Browser results]
+  Browser -->|Export visible chart| Chart[var/charts/id.svg]
+  Restart[Service restart] --> Cleared[Active upload and running-job state lost]
+  Restart --> Persisted[Saved project snapshots and completed reports remain]
+  Changed[Original file updated] -->|Upload again; no automatic cloud sync| RAM

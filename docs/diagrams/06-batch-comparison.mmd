@@ -1,0 +1,11 @@
+flowchart TD
+  Config[Dataset plus batch field and other filters] --> Groups[Resolve 1 to 12 groups]
+  Groups --> Loop[Next group sequentially]
+  Loop --> Fit[Same quality and forecast workflow]
+  Fit --> Success{Fit succeeded?}
+  Success -->|Yes| Member[Independent member report and evidence ZIP]
+  Success -->|No| Failure[Retain group and error message]
+  Member --> More{More groups?}
+  Failure --> More
+  More -->|Yes| Loop
+  More -->|No| Summary[Comparison table charts CSV HTML and ZIP]

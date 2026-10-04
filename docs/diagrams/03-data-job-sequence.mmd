@@ -1,0 +1,31 @@
+sequenceDiagram
+  actor Analyst
+  participant UI as Browser
+  participant API as Local HTTP service
+  participant RAM as Process memory
+  participant Worker as Forecast thread
+  participant Disk as Local var folder
+  Analyst->>UI: Select file and inspect
+  UI->>API: POST /api/datasets (base64 bytes and layout)
+  API->>RAM: Replace active dataset; retain source bytes
+  API-->>UI: Dataset id, fields, categories and preview
+  Analyst->>UI: Set model, filters and assumptions
+  UI->>API: POST /api/review
+  API-->>UI: Blocking issues and warnings
+  Analyst->>UI: Acknowledge findings and analyze
+  UI->>API: POST /api/jobs
+  API->>RAM: Create running job id
+  API->>Worker: Start one background analysis
+  API-->>UI: Job id
+  loop Approximately every 1.2 seconds while running
+    UI->>API: GET /api/jobs/id
+    API-->>UI: Status and stage
+  end
+  Worker->>Disk: Write evidence and reports
+  Worker->>RAM: Mark completed or failed
+  API-->>UI: Final results and file names
+  UI->>API: GET /api/jobs/id/charts
+  API->>Disk: Read selected history and backtests
+  API-->>UI: Chart evidence JSON
+  Analyst->>UI: Zoom, expand or toggle chart series
+  Note over UI: Interaction uses saved results; no new model fit

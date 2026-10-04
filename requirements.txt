@@ -1,0 +1,8 @@
+pandas==3.0.6
+numpy==2.5.3
+scipy==1.18.1
+statsmodels==0.15.0
+openpyxl==3.1.5
+xlrd==2.0.2
+reportlab==5.0.1
+-c requirements.lock.txt

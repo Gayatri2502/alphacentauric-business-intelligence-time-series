@@ -1,0 +1,10 @@
+flowchart LR
+  Target[Selected market history] --> Align[Align historical periods]
+  Driver[Separate numeric driver history] --> Align
+  Align --> Scale[Standardize driver per training window]
+  Scale --> Validate[Conditional backtests with observed test drivers]
+  Scale --> Fit[SARIMAX production fit]
+  Assumed[User enters one future driver value per period] --> Predict[Conditional future forecast]
+  Fit --> Predict
+  Predict --> Report[Report conditional bounds and limitations]
+  Validate --> Report

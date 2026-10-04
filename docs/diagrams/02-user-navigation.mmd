@@ -1,0 +1,20 @@
+flowchart TD
+  Start[Open dashboard] --> Source[Upload or load sample]
+  Source --> Inspect[Inspect sheet and layout]
+  Inspect --> Map[Map metric time units and market filters]
+  Map --> Choice[Choose model and assumptions]
+  Choice --> Review[Review data quality]
+  Review --> Block{Blocking issue?}
+  Block -->|Yes| Fix[Correct source or configuration]
+  Fix --> Inspect
+  Block -->|No| Ack[Acknowledge warnings]
+  Ack --> Analyze[Run analysis]
+  Analyze --> Results[Charts findings and final test]
+  Results --> Download[Download reports or evidence]
+  Results --> Notes[Edit analyst commentary]
+  Notes --> Revision[New report version]
+  Map --> Save[Save project source and settings]
+  Save --> Library[Projects and reports library]
+  Library -->|Open project| Map
+  Library -->|Open analysis without fitting| Results
+  Choice -->|Settings change| Review

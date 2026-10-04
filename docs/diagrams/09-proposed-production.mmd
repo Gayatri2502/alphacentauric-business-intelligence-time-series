@@ -1,0 +1,17 @@
+flowchart LR
+  Users[Authenticated users] --> Edge[HTTPS domain reverse proxy]
+  Edge --> Auth[OIDC identity and authorization]
+  Auth --> API[Validated production API]
+  API --> DB[(PostgreSQL tenant and job metadata)]
+  API --> Objects[(Private object storage)]
+  API --> Queue[Durable job queue]
+  Queue --> Workers[Isolated forecast workers]
+  Workers --> Objects
+  Workers --> DB
+  Scheduler[Source refresh scheduler] --> Connector[Licensed scoped data connectors]
+  Connector --> Objects
+  Objects --> Workers
+  API --> Status[Polling or SSE status updates]
+  Status --> Users
+  API --> Monitoring[Metrics logs audit and alerts]
+  Workers --> Monitoring
