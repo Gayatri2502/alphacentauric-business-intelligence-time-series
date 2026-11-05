@@ -1,0 +1,23 @@
+{
+  "handle": "rohitsahoo/sales-forecasting",
+  "title": "Superstore Sales Dataset",
+  "url": "https://www.kaggle.com/datasets/rohitsahoo/sales-forecasting",
+  "download_url": "https://www.kaggle.com/api/v1/datasets/download/rohitsahoo/sales-forecasting",
+  "license": "GPL 2",
+  "source_updated_at": "2020-09-11T15:40:14.483Z",
+  "retrieved_at": "2026-11-05T11:26:17.322089+00:00",
+  "source_sha256": "dbb0f167b27ccf02d7ff8cb0446a9abc6dbc3522e83cf9daa6939801acfdd196",
+  "prepared_sha256": "09816d6bd7fc99270d3ecb4f892084ed10ff55a7befbabda9d7f60e8be998a3e",
+  "original_rows": 9800,
+  "prepared_rows": 573,
+  "first_period": "2015-01-01",
+  "last_period": "2018-12-01",
+  "transformations": [
+    "Parse Order Date explicitly as DD/MM/YYYY",
+    "Aggregate Sales by calendar month, region and category",
+    "Count order lines; do not claim they are distinct orders",
+    "Exclude customer names, IDs, addresses and product-level details"
+  ],
+  "unit": "Sales in source currency units; source does not explicitly verify currency",
+  "caveat": "Historical educational retail records from Kaggle; not current country or sector market-size estimates. No independent verification of authenticity."
+}

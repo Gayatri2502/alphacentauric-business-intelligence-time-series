@@ -8,3 +8,16 @@ dist/
 var/*/*
 !var/*/.gitkeep
 .DS_Store
+
+.vercel/
+.pytest_cache/
+playwright-results/
+var/*.sqlite3
+.vercel
+.env*
+
+node_modules/
+test-results/
+
+.env*
+!.env.example

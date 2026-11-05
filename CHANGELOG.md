@@ -1,3 +1,13 @@
+# 1.1.0
+
+- Stateless hosted forecasting transport and Vercel Python entrypoint.
+- Kaggle retail snapshot with recorded provenance, license and privacy-preserving monthly aggregation.
+- Browser IndexedDB projects/reports, reload recovery, report downloads and commentary versioning.
+- Bounded hosted uploads/results, expanded-workbook checks and same-origin requests.
+- Local shared-workspace accounts, revocable sessions, CSRF checks, isolated worker processes and interruption records.
+- Verified backup/restore tooling and source refresh CLIs.
+- Hosted API and real-browser workflow tests.
+
 # Changelog
 
 ## 1.0.0 — packaged release

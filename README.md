@@ -1,3 +1,19 @@
+# Alphacentauric Business Intelligence — hosted release 1.1
+
+A functional forecasting dashboard with real Kaggle retail data, CSV/Excel uploads, 13 named models, model comparison, interactive charts, scenarios and downloadable evidence reports. **No paid AI calls or API keys are required.**
+
+**Production:** https://alphacentauric-bi.vercel.app
+
+Repository: https://github.com/Gayatri2502/alphacentauric-business-intelligence-time-series
+
+Start with the [hosted application guide](docs/HOSTED.md) for the current deployment architecture, beginner usage, execution commands, Kaggle provenance, data/navigation diagrams, tests and commercial boundaries. [Data attribution](THIRD_PARTY_DATA.md) records the source license.
+
+Hosted projects/reports are saved in this browser's IndexedDB and can be downloaded. They are not synchronized across devices. Uploads are processed in a request-scoped temporary directory. The Kaggle sample is historical 2015–2018 retail data, not a live market feed or 2026 market forecast.
+
+The original local dashboard and its detailed guide follow below. Its file storage, local-account mode and deployment roadmap describe the persistent local/server edition; use `docs/HOSTED.md` for the Vercel edition.
+
+---
+
 # Alphacentauric Business Intelligence
 
 **Turn dated market data into inspectable forecasts, interactive charts and evidence-backed reports.**

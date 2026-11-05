@@ -1,34 +1,13 @@
-# Verification record
+# Release 1.1 verification
 
-## Automated tests
+Local Python 3.12: **37 automated tests passed**, including real Kaggle SARIMA/model comparison/SARIMAX/batch forecasts, report exports, mandatory review, upload bounds, source hashes, account expiry/revocation, CSRF/viewer restrictions, backup integrity and interrupted-job records.
 
-Run from the project root using Python 3.12 and installed requirements:
+A Chromium end-to-end test passed: Kaggle loading, explicit model selection, quality acknowledgement, forecasting, six interactive charts, expanded dialog, PDF download, project/report persistence after reload, commentary revision and mobile overflow checks. No uncaught page errors were observed.
 
-```sh
-python -m unittest discover -s tests -p 'test*.py'
-```
+Kaggle input is historical educational retail data; these checks do not certify present-day market accuracy. The default West/Technology series contains 47 observed monthly periods, starting February 2015.
 
-The structured release contains 21 tests. They verify source parsing, wide Excel reshaping, segment ambiguity, invalid/missing data handling, causal fill, CAGR limits, seasonal-history limits, training-only order selection, model families, SARIMAX driver requirements, final-test/calibration separation, scenario output, report archives and quoted JSON embedding in R exports.
+The Vercel Python bundle built successfully using Python 3.12. Final production URL/commit and post-deploy checks are recorded in `docs/RELEASE.md`. The production build uses a request-scoped temporary directory, with browser IndexedDB library persistence.
 
-All 21 tests passed against both the reorganized source package and a separately extracted release ZIP on the build machine. Tests use synthetic data and do not establish real-world market forecast accuracy.
+R Markdown/verification files are generated and structurally checked. R/Pandoc knitting remains unverified on this machine. Docker/Compose startup remains unverified without a running Docker daemon/Compose plugin. Remote CI is verified separately through its run status.
 
-## Local release checks
-
-The release is checked by extracting its ZIP into a separate folder, running those tests again, starting its run.py with a temporary runtime directory/alternate local port, and exercising inspection, review, model execution, health/static routes, saved projects, chart evidence and downloadable exports. Generated test data does not belong in the distribution ZIP.
-
-The extracted release passed HTTP checks for health, static assets, CSV upload, quality review, saved-project reload, SARIMA execution, chart evidence, and PDF, HTML, CSV, JSON, R Markdown, R script and evidence ZIP downloads. The downloaded evidence bundle also reran successfully as a standalone analysis using the sample CSV. An installable wheel was built offline from the package metadata. Python source/metadata, frontend JavaScript syntax and archive integrity are checked. MANIFEST.sha256 contains hashes for release files; tools/verify_release.py validates them after extraction. Extra files you generate, such as .venv and var reports, are not part of the manifest.
-
-## Previously verified application behavior
-
-The local application has been browser-checked for model choice, mandatory data review, interactive chart rendering, series toggles, zoom/reset, expanded dialogs, keyboard point inspection and SVG export links. HTTP checks verified saved project load, new commentary versions without numerical changes, four-market batch ZIPs and report downloads. PDF content has been checked and pages rendered for inspection.
-
-## Unverified boundaries
-
-- R and RStudio are unavailable here. Rmd and verification.R are generated/structurally checked, including safe data quoting, but have not been executed or knitted.
-- A Docker CLI exists but lacks its Compose plugin. A Docker image build/container startup has not been executed; Docker/Compose files are starter configuration.
-- The supplied GitHub Actions workflow has not run in a remote repository.
-- No wheel has been installed in an entirely new OS environment unless explicitly recorded by the final release checks; source-launch testing uses the pinned installed dependencies.
-- No public deployment, identity provider, database, durable queue, cloud object store or source connector is integrated.
-- No live market dataset, licensed-source authenticity, country coverage, regulatory suitability or universal precision has been certified.
-
-These boundaries prevent confusing a tested local package with a completed public commercial deployment.
+This is a functional hosted research application within documented limits, not a completed enterprise multi-tenant SaaS. See HOSTED.md for explicit boundaries.

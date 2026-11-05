@@ -2,6 +2,7 @@
 (()=>{
 const colors=['#67ead2','#b8a1ff','#f4c477','#ef91b7','#7ebfff'];
 let generation=0;
+const axisNumber=x=>new Intl.NumberFormat(undefined,{notation:'compact',maximumFractionDigits:1}).format(x);
 const number=x=>x==null?'N/A':Number(x).toLocaleString(undefined,{maximumFractionDigits:3});
 function chart(host,spec,expanded=false){
  let from=0,to=spec.rows.length-1,active=0,visible=spec.series.map(()=>true);
@@ -17,7 +18,7 @@ function chart(host,spec,expanded=false){
   const values=rows.flatMap(r=>spec.series.flatMap((s,i)=>visible[i]&&r[s.key]!=null?[Number(r[s.key])]:[]).concat(spec.band&&r.lower!=null?[r.lower,r.upper]:[])).filter(Number.isFinite);
   let min=Math.min(...values),max=Math.max(...values);if(spec.type==='bar'){min=Math.min(0,min);max=Math.max(0,max);}const margin=(max-min||Math.abs(max)||1)*.1;min-=margin;max+=margin;if(spec.type==='bar'&&values.every(v=>v>=0))min=0;if(spec.type==='bar'&&values.every(v=>v<=0))max=0;
   const x=i=>L+i/Math.max(1,rows.length-1)*(R-L),y=v=>B-(v-min)/(max-min)*(B-T);let inner='';
-  for(let i=0;i<5;i++){const v=min+(max-min)*i/4,yy=y(v);inner+='<line x1="'+L+'" x2="'+R+'" y1="'+yy+'" y2="'+yy+'" stroke="#30415b"/><text x="60" y="'+(yy+4)+'" text-anchor="end" fill="#adbed4" font-size="12">'+esc(number(v))+'</text>';}
+  for(let i=0;i<5;i++){const v=min+(max-min)*i/4,yy=y(v);inner+='<line x1="'+L+'" x2="'+R+'" y1="'+yy+'" y2="'+yy+'" stroke="#30415b"/><text x="60" y="'+(yy+4)+'" text-anchor="end" fill="#adbed4" font-size="12">'+esc(axisNumber(v))+'</text>';}
   if(spec.type==='bar'){
    const vis=spec.series.map((s,i)=>({s,i})).filter(o=>visible[o.i]),group=(R-L)/rows.length;
    rows.forEach((r,k)=>vis.forEach(({s,i},j)=>{if(r[s.key]==null)return;const v=Number(r[s.key]),yy=y(v),base=y(0);inner+='<rect data-index="'+(from+k)+'" x="'+(L+k*group+group*.1+j*group*.8/vis.length)+'" y="'+Math.min(yy,base)+'" width="'+group*.75/vis.length+'" height="'+Math.max(1,Math.abs(base-yy))+'" rx="3" fill="'+colors[i%colors.length]+'"><title>'+esc(r.label+' · '+s.name+': '+number(v))+'</title></rect>';}));

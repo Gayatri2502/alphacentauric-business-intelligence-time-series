@@ -1,0 +1,574 @@
+date,region,category,sales,order_lines,country
+2015-01-01,Central,Furniture,506.358000,4,United States
+2015-01-01,Central,Office Supplies,996.408000,15,United States
+2015-01-01,Central,Technology,31.200000,1,United States
+2015-01-01,East,Furniture,199.004000,3,United States
+2015-01-01,East,Office Supplies,112.970000,6,United States
+2015-01-01,East,Technology,124.200000,1,United States
+2015-01-01,South,Furniture,4353.480000,7,United States
+2015-01-01,South,Office Supplies,1955.474000,17,United States
+2015-01-01,South,Technology,2987.890000,7,United States
+2015-01-01,West,Furniture,1158.435000,5,United States
+2015-01-01,West,Office Supplies,1780.288000,11,United States
+2015-02-01,Central,Furniture,439.310000,4,United States
+2015-02-01,Central,Office Supplies,262.654000,13,United States
+2015-02-01,Central,Technology,531.210000,2,United States
+2015-02-01,East,Office Supplies,84.416000,2,United States
+2015-02-01,East,Technology,115.360000,1,United States
+2015-02-01,South,Furniture,1256.220000,1,United States
+2015-02-01,South,Office Supplies,50.796000,3,United States
+2015-02-01,South,Technology,721.970000,4,United States
+2015-02-01,West,Furniture,144.128000,2,United States
+2015-02-01,West,Office Supplies,673.858000,13,United States
+2015-02-01,West,Technology,239.970000,1,United States
+2015-03-01,Central,Furniture,3639.290000,7,United States
+2015-03-01,Central,Office Supplies,1281.474000,20,United States
+2015-03-01,Central,Technology,906.838000,3,United States
+2015-03-01,East,Furniture,3942.786000,6,United States
+2015-03-01,East,Office Supplies,1019.490000,21,United States
+2015-03-01,East,Technology,495.900000,3,United States
+2015-03-01,South,Furniture,2740.560000,9,United States
+2015-03-01,South,Office Supplies,1623.785000,33,United States
+2015-03-01,South,Technology,28546.776000,8,United States
+2015-03-01,West,Furniture,3920.732000,10,United States
+2015-03-01,West,Office Supplies,4677.706000,27,United States
+2015-03-01,West,Technology,2410.460000,7,United States
+2015-04-01,Central,Furniture,1468.218000,4,United States
+2015-04-01,Central,Office Supplies,1257.794000,15,United States
+2015-04-01,Central,Technology,986.328000,2,United States
+2015-04-01,East,Furniture,929.414000,6,United States
+2015-04-01,East,Office Supplies,1756.820000,20,United States
+2015-04-01,East,Technology,368.672000,4,United States
+2015-04-01,South,Furniture,2016.104000,5,United States
+2015-04-01,South,Office Supplies,6973.242000,21,United States
+2015-04-01,South,Technology,3079.906000,9,United States
+2015-04-01,West,Furniture,3531.101000,11,United States
+2015-04-01,West,Office Supplies,1001.018000,24,United States
+2015-04-01,West,Technology,4538.238000,9,United States
+2015-05-01,Central,Furniture,2304.382000,9,United States
+2015-05-01,Central,Office Supplies,793.612000,18,United States
+2015-05-01,Central,Technology,946.528000,5,United States
+2015-05-01,East,Furniture,2433.143000,7,United States
+2015-05-01,East,Office Supplies,1718.006000,24,United States
+2015-05-01,East,Technology,3098.954000,4,United States
+2015-05-01,South,Furniture,310.880000,1,United States
+2015-05-01,South,Office Supplies,3415.776000,14,United States
+2015-05-01,South,Technology,2052.584000,6,United States
+2015-05-01,West,Furniture,1864.382000,7,United States
+2015-05-01,West,Office Supplies,1204.246000,14,United States
+2015-05-01,West,Technology,3501.810000,12,United States
+2015-06-01,Central,Furniture,4222.502600,7,United States
+2015-06-01,Central,Office Supplies,4459.244000,27,United States
+2015-06-01,Central,Technology,692.360000,4,United States
+2015-06-01,East,Furniture,3672.689000,8,United States
+2015-06-01,East,Office Supplies,3392.630000,28,United States
+2015-06-01,East,Technology,3693.837000,8,United States
+2015-06-01,South,Furniture,1823.842000,5,United States
+2015-06-01,South,Office Supplies,1105.729000,9,United States
+2015-06-01,South,Technology,1630.680000,4,United States
+2015-06-01,West,Furniture,3425.548000,9,United States
+2015-06-01,West,Office Supplies,3784.786000,17,United States
+2015-06-01,West,Technology,2419.088000,5,United States
+2015-07-01,Central,Furniture,2185.896000,5,United States
+2015-07-01,Central,Office Supplies,3446.512000,21,United States
+2015-07-01,Central,Technology,1108.166000,6,United States
+2015-07-01,East,Furniture,1386.670000,7,United States
+2015-07-01,East,Office Supplies,527.262000,15,United States
+2015-07-01,East,Technology,1489.364000,8,United States
+2015-07-01,South,Furniture,456.214000,5,United States
+2015-07-01,South,Office Supplies,317.016000,10,United States
+2015-07-01,South,Technology,1055.890000,2,United States
+2015-07-01,West,Furniture,6792.271000,16,United States
+2015-07-01,West,Office Supplies,10830.418000,36,United States
+2015-07-01,West,Technology,4185.864000,11,United States
+2015-08-01,Central,Furniture,964.482000,3,United States
+2015-08-01,Central,Office Supplies,1186.531000,10,United States
+2015-08-01,Central,Technology,871.170000,3,United States
+2015-08-01,East,Furniture,2010.402000,4,United States
+2015-08-01,East,Office Supplies,1830.686000,31,United States
+2015-08-01,East,Technology,741.360000,4,United States
+2015-08-01,South,Furniture,2744.762500,7,United States
+2015-08-01,South,Office Supplies,2705.062000,22,United States
+2015-08-01,South,Technology,1320.132000,5,United States
+2015-08-01,West,Furniture,1405.564000,9,United States
+2015-08-01,West,Office Supplies,5332.997000,34,United States
+2015-08-01,West,Technology,6004.388000,14,United States
+2015-09-01,Central,Furniture,6189.827800,14,United States
+2015-09-01,Central,Office Supplies,12488.706000,41,United States
+2015-09-01,Central,Technology,15576.332000,12,United States
+2015-09-01,East,Furniture,10015.199000,24,United States
+2015-09-01,East,Office Supplies,8440.576000,57,United States
+2015-09-01,East,Technology,6837.014000,15,United States
+2015-09-01,South,Furniture,524.600000,4,United States
+2015-09-01,South,Office Supplies,2335.740000,16,United States
+2015-09-01,South,Technology,4314.995000,7,United States
+2015-09-01,West,Furniture,7086.854000,14,United States
+2015-09-01,West,Office Supplies,4158.276000,52,United States
+2015-09-01,West,Technology,3655.407000,11,United States
+2015-10-01,Central,Furniture,295.367000,3,United States
+2015-10-01,Central,Office Supplies,1758.678000,21,United States
+2015-10-01,Central,Technology,6911.712000,8,United States
+2015-10-01,East,Furniture,6725.660000,12,United States
+2015-10-01,East,Office Supplies,1757.206000,22,United States
+2015-10-01,East,Technology,462.258000,4,United States
+2015-10-01,South,Furniture,2225.354000,7,United States
+2015-10-01,South,Office Supplies,1147.018000,15,United States
+2015-10-01,South,Technology,1441.382000,3,United States
+2015-10-01,West,Furniture,3057.866000,10,United States
+2015-10-01,West,Office Supplies,2548.226000,39,United States
+2015-10-01,West,Technology,3122.666000,15,United States
+2015-11-01,Central,Furniture,5164.772200,16,United States
+2015-11-01,Central,Office Supplies,6127.024000,54,United States
+2015-11-01,Central,Technology,2612.660000,12,United States
+2015-11-01,East,Furniture,8253.592000,18,United States
+2015-11-01,East,Office Supplies,9562.517000,46,United States
+2015-11-01,East,Technology,15757.086000,17,United States
+2015-11-01,South,Furniture,2014.038000,5,United States
+2015-11-01,South,Office Supplies,2824.585000,29,United States
+2015-11-01,South,Technology,2546.450000,7,United States
+2015-11-01,West,Furniture,6038.638500,21,United States
+2015-11-01,West,Office Supplies,7849.070000,57,United States
+2015-11-01,West,Technology,9157.228000,24,United States
+2015-12-01,Central,Furniture,5433.962000,15,United States
+2015-12-01,Central,Office Supplies,2722.482000,39,United States
+2015-12-01,Central,Technology,2150.530000,12,United States
+2015-12-01,East,Furniture,7264.888000,20,United States
+2015-12-01,East,Office Supplies,5454.114000,35,United States
+2015-12-01,East,Technology,11978.674000,15,United States
+2015-12-01,South,Furniture,6476.700000,8,United States
+2015-12-01,South,Office Supplies,1331.575000,24,United States
+2015-12-01,South,Technology,947.698000,5,United States
+2015-12-01,West,Furniture,11461.792500,30,United States
+2015-12-01,West,Office Supplies,7448.321000,54,United States
+2015-12-01,West,Technology,5496.322000,17,United States
+2016-01-01,Central,Furniture,1962.223600,5,United States
+2016-01-01,Central,Office Supplies,149.888000,7,United States
+2016-01-01,Central,Technology,398.400000,1,United States
+2016-01-01,East,Furniture,1652.540000,3,United States
+2016-01-01,East,Office Supplies,711.476000,10,United States
+2016-01-01,East,Technology,2199.860000,8,United States
+2016-01-01,South,Furniture,4489.864000,2,United States
+2016-01-01,South,Office Supplies,475.970000,7,United States
+2016-01-01,West,Furniture,3635.314000,5,United States
+2016-01-01,West,Office Supplies,471.446000,8,United States
+2016-01-01,West,Technology,1919.976000,1,United States
+2016-02-01,Central,Furniture,69.184000,2,United States
+2016-02-01,Central,Office Supplies,814.252000,7,United States
+2016-02-01,Central,Technology,1644.150000,7,United States
+2016-02-01,East,Furniture,2137.542000,4,United States
+2016-02-01,East,Office Supplies,3089.681000,15,United States
+2016-02-01,East,Technology,1235.910000,5,United States
+2016-02-01,South,Furniture,551.264000,2,United States
+2016-02-01,South,Office Supplies,575.260000,5,United States
+2016-02-01,South,Technology,29.990000,1,United States
+2016-02-01,West,Furniture,376.384000,3,United States
+2016-02-01,West,Office Supplies,888.874000,12,United States
+2016-02-01,West,Technology,538.920000,1,United States
+2016-03-01,Central,Furniture,3835.614400,9,United States
+2016-03-01,Central,Office Supplies,851.222000,18,United States
+2016-03-01,Central,Technology,1594.382000,8,United States
+2016-03-01,East,Furniture,516.547000,3,United States
+2016-03-01,East,Office Supplies,1649.004000,17,United States
+2016-03-01,East,Technology,1301.986000,7,United States
+2016-03-01,South,Furniture,1204.208000,3,United States
+2016-03-01,South,Office Supplies,8589.983000,21,United States
+2016-03-01,South,Technology,527.904000,2,United States
+2016-03-01,West,Furniture,3166.268000,11,United States
+2016-03-01,West,Office Supplies,2382.530000,19,United States
+2016-03-01,West,Technology,6719.670000,10,United States
+2016-04-01,Central,Furniture,1723.783000,8,United States
+2016-04-01,Central,Office Supplies,6692.142000,30,United States
+2016-04-01,Central,Technology,3226.130000,12,United States
+2016-04-01,East,Furniture,2476.044000,9,United States
+2016-04-01,East,Office Supplies,2308.012000,29,United States
+2016-04-01,East,Technology,2994.740000,9,United States
+2016-04-01,South,Furniture,3959.719500,10,United States
+2016-04-01,South,Office Supplies,324.554000,7,United States
+2016-04-01,South,Technology,1434.060000,4,United States
+2016-04-01,West,Furniture,2316.152000,6,United States
+2016-04-01,West,Office Supplies,3193.110000,23,United States
+2016-04-01,West,Technology,3506.022000,12,United States
+2016-05-01,Central,Furniture,3920.219000,10,United States
+2016-05-01,Central,Office Supplies,1771.934000,21,United States
+2016-05-01,Central,Technology,2931.750000,7,United States
+2016-05-01,East,Furniture,1475.578000,9,United States
+2016-05-01,East,Office Supplies,2591.384000,31,United States
+2016-05-01,East,Technology,3242.306000,5,United States
+2016-05-01,South,Furniture,226.688000,2,United States
+2016-05-01,South,Office Supplies,714.104000,11,United States
+2016-05-01,South,Technology,1042.912000,4,United States
+2016-05-01,West,Furniture,3752.465500,9,United States
+2016-05-01,West,Office Supplies,3864.158000,28,United States
+2016-05-01,West,Technology,4426.032000,6,United States
+2016-06-01,Central,Furniture,1069.181000,3,United States
+2016-06-01,Central,Office Supplies,1015.990000,15,United States
+2016-06-01,Central,Technology,1628.016000,6,United States
+2016-06-01,East,Furniture,2273.212000,7,United States
+2016-06-01,East,Office Supplies,4647.832000,18,United States
+2016-06-01,East,Technology,521.944000,3,United States
+2016-06-01,South,Furniture,2266.088000,7,United States
+2016-06-01,South,Office Supplies,3093.705000,25,United States
+2016-06-01,South,Technology,1994.456000,9,United States
+2016-06-01,West,Furniture,1932.490000,8,United States
+2016-06-01,West,Office Supplies,865.510000,19,United States
+2016-06-01,West,Technology,2290.950000,9,United States
+2016-07-01,Central,Furniture,2636.159000,7,United States
+2016-07-01,Central,Office Supplies,1232.304000,20,United States
+2016-07-01,Central,Technology,3737.104000,7,United States
+2016-07-01,East,Furniture,5263.142000,14,United States
+2016-07-01,East,Office Supplies,1932.204000,29,United States
+2016-07-01,East,Technology,4520.252000,7,United States
+2016-07-01,South,Furniture,852.116000,7,United States
+2016-07-01,South,Office Supplies,721.382000,12,United States
+2016-07-01,South,Technology,623.770000,4,United States
+2016-07-01,West,Furniture,4915.623000,11,United States
+2016-07-01,West,Office Supplies,820.353000,15,United States
+2016-07-01,West,Technology,1353.850000,3,United States
+2016-08-01,Central,Furniture,2956.999200,9,United States
+2016-08-01,Central,Office Supplies,2198.032000,24,United States
+2016-08-01,Central,Technology,4146.420000,4,United States
+2016-08-01,East,Furniture,2036.544000,11,United States
+2016-08-01,East,Office Supplies,4719.000000,29,United States
+2016-08-01,East,Technology,2628.238000,11,United States
+2016-08-01,South,Furniture,46.152000,1,United States
+2016-08-01,South,Office Supplies,1043.788000,12,United States
+2016-08-01,South,Technology,4494.810000,5,United States
+2016-08-01,West,Furniture,4598.897000,11,United States
+2016-08-01,West,Office Supplies,3774.288000,31,United States
+2016-08-01,West,Technology,4175.174000,10,United States
+2016-09-01,Central,Furniture,3573.406000,10,United States
+2016-09-01,Central,Office Supplies,636.894000,19,United States
+2016-09-01,Central,Technology,3368.220000,6,United States
+2016-09-01,East,Furniture,12308.458000,18,United States
+2016-09-01,East,Office Supplies,7544.247000,71,United States
+2016-09-01,East,Technology,9548.302000,23,United States
+2016-09-01,South,Furniture,4467.230000,11,United States
+2016-09-01,South,Office Supplies,4958.149000,33,United States
+2016-09-01,South,Technology,4166.128000,8,United States
+2016-09-01,West,Furniture,4736.329000,16,United States
+2016-09-01,West,Office Supplies,5891.765000,59,United States
+2016-09-01,West,Technology,1934.478000,11,United States
+2016-10-01,Central,Furniture,3412.057000,6,United States
+2016-10-01,Central,Office Supplies,719.125000,21,United States
+2016-10-01,Central,Technology,2869.304000,12,United States
+2016-10-01,East,Furniture,2126.692000,6,United States
+2016-10-01,East,Office Supplies,604.904000,17,United States
+2016-10-01,East,Technology,3570.434000,12,United States
+2016-10-01,South,Furniture,1695.667500,5,United States
+2016-10-01,South,Office Supplies,2238.572000,14,United States
+2016-10-01,South,Technology,151.488000,3,United States
+2016-10-01,West,Furniture,4430.071000,18,United States
+2016-10-01,West,Office Supplies,5079.759000,36,United States
+2016-10-01,West,Technology,4113.664000,14,United States
+2016-11-01,Central,Furniture,6187.756000,16,United States
+2016-11-01,Central,Office Supplies,7283.898000,53,United States
+2016-11-01,Central,Technology,5431.432000,15,United States
+2016-11-01,East,Furniture,15101.174000,24,United States
+2016-11-01,East,Office Supplies,6020.091000,55,United States
+2016-11-01,East,Technology,13603.496000,23,United States
+2016-11-01,South,Furniture,3139.517500,13,United States
+2016-11-01,South,Office Supplies,3922.910000,29,United States
+2016-11-01,South,Technology,733.393000,6,United States
+2016-11-01,West,Furniture,5769.053000,23,United States
+2016-11-01,West,Office Supplies,3951.399000,47,United States
+2016-11-01,West,Technology,4105.280000,17,United States
+2016-12-01,Central,Furniture,3861.999200,16,United States
+2016-12-01,Central,Office Supplies,2030.126000,35,United States
+2016-12-01,Central,Technology,10845.476000,18,United States
+2016-12-01,East,Furniture,6442.579000,17,United States
+2016-12-01,East,Office Supplies,4260.994000,48,United States
+2016-12-01,East,Technology,13968.834000,19,United States
+2016-12-01,South,Furniture,946.112000,8,United States
+2016-12-01,South,Office Supplies,3570.208000,29,United States
+2016-12-01,South,Technology,803.960000,8,United States
+2016-12-01,West,Furniture,11561.561000,22,United States
+2016-12-01,West,Office Supplies,6237.994000,69,United States
+2016-12-01,West,Technology,10013.758000,22,United States
+2017-01-01,Central,Furniture,3807.906000,4,United States
+2017-01-01,Central,Office Supplies,317.642000,6,United States
+2017-01-01,Central,Technology,1816.608000,4,United States
+2017-01-01,East,Furniture,1108.189000,7,United States
+2017-01-01,East,Office Supplies,2581.868000,19,United States
+2017-01-01,East,Technology,1170.030000,8,United States
+2017-01-01,South,Furniture,781.184000,3,United States
+2017-01-01,South,Office Supplies,1665.834000,8,United States
+2017-01-01,South,Technology,1635.408000,5,United States
+2017-01-01,West,Furniture,1925.464000,8,United States
+2017-01-01,West,Office Supplies,734.338000,12,United States
+2017-01-01,West,Technology,998.020000,5,United States
+2017-02-01,Central,Furniture,394.434000,4,United States
+2017-02-01,Central,Office Supplies,651.364000,5,United States
+2017-02-01,Central,Technology,69.930000,1,United States
+2017-02-01,East,Furniture,1364.807000,7,United States
+2017-02-01,East,Office Supplies,1564.584000,15,United States
+2017-02-01,East,Technology,220.430000,3,United States
+2017-02-01,South,Furniture,1594.214000,6,United States
+2017-02-01,South,Office Supplies,3451.284000,18,United States
+2017-02-01,South,Technology,10567.606000,5,United States
+2017-02-01,West,Furniture,572.096000,2,United States
+2017-02-01,West,Office Supplies,1127.118000,10,United States
+2017-02-01,West,Technology,1400.948000,7,United States
+2017-03-01,Central,Furniture,4491.081000,11,United States
+2017-03-01,Central,Office Supplies,5008.270000,23,United States
+2017-03-01,Central,Technology,3103.646000,10,United States
+2017-03-01,East,Furniture,4515.019000,15,United States
+2017-03-01,East,Office Supplies,3807.414000,28,United States
+2017-03-01,East,Technology,8442.424000,16,United States
+2017-03-01,South,Furniture,643.652000,7,United States
+2017-03-01,South,Office Supplies,2110.586000,12,United States
+2017-03-01,South,Technology,1483.936000,2,United States
+2017-03-01,West,Furniture,2622.910000,7,United States
+2017-03-01,West,Office Supplies,6398.275000,21,United States
+2017-03-01,West,Technology,8537.846000,9,United States
+2017-04-01,Central,Furniture,2233.828000,8,United States
+2017-04-01,Central,Office Supplies,3377.474000,16,United States
+2017-04-01,Central,Technology,1851.050000,6,United States
+2017-04-01,East,Furniture,3097.364000,7,United States
+2017-04-01,East,Office Supplies,3925.000000,44,United States
+2017-04-01,East,Technology,10747.332000,7,United States
+2017-04-01,South,Furniture,963.524000,6,United States
+2017-04-01,South,Office Supplies,1049.992000,16,United States
+2017-04-01,South,Technology,952.194000,6,United States
+2017-04-01,West,Furniture,6917.374000,14,United States
+2017-04-01,West,Office Supplies,2224.709000,35,United States
+2017-04-01,West,Technology,1339.926000,3,United States
+2017-05-01,Central,Furniture,4610.925000,10,United States
+2017-05-01,Central,Office Supplies,4327.498000,35,United States
+2017-05-01,Central,Technology,2805.542000,8,United States
+2017-05-01,East,Furniture,1379.064000,12,United States
+2017-05-01,East,Office Supplies,4215.880000,38,United States
+2017-05-01,East,Technology,16663.519000,15,United States
+2017-05-01,South,Furniture,3982.040000,9,United States
+2017-05-01,South,Office Supplies,3273.603000,37,United States
+2017-05-01,South,Technology,4704.590000,7,United States
+2017-05-01,West,Furniture,4920.546000,10,United States
+2017-05-01,West,Office Supplies,1114.661000,28,United States
+2017-05-01,West,Technology,4659.040000,12,United States
+2017-06-01,Central,Furniture,2419.783000,12,United States
+2017-06-01,Central,Office Supplies,1419.718000,22,United States
+2017-06-01,Central,Technology,2713.647000,10,United States
+2017-06-01,East,Furniture,2213.722000,10,United States
+2017-06-01,East,Office Supplies,6492.164000,52,United States
+2017-06-01,East,Technology,2482.560000,9,United States
+2017-06-01,South,Furniture,1266.860000,1,United States
+2017-06-01,South,Office Supplies,717.276000,10,United States
+2017-06-01,South,Technology,1471.749000,7,United States
+2017-06-01,West,Furniture,6550.159000,12,United States
+2017-06-01,West,Office Supplies,2272.652000,41,United States
+2017-06-01,West,Technology,9704.196000,10,United States
+2017-07-01,Central,Furniture,1452.002000,7,United States
+2017-07-01,Central,Office Supplies,4222.086000,31,United States
+2017-07-01,Central,Technology,2279.196000,7,United States
+2017-07-01,East,Furniture,1622.704000,7,United States
+2017-07-01,East,Office Supplies,3703.384000,36,United States
+2017-07-01,East,Technology,3198.109000,8,United States
+2017-07-01,South,Furniture,3677.040000,6,United States
+2017-07-01,South,Office Supplies,1690.964000,26,United States
+2017-07-01,South,Technology,1194.415000,4,United States
+2017-07-01,West,Furniture,5818.013000,17,United States
+2017-07-01,West,Office Supplies,3287.390000,34,United States
+2017-07-01,West,Technology,6175.480000,13,United States
+2017-08-01,Central,Furniture,1908.392800,7,United States
+2017-08-01,Central,Office Supplies,1829.908000,33,United States
+2017-08-01,Central,Technology,3244.254000,10,United States
+2017-08-01,East,Furniture,2626.675000,8,United States
+2017-08-01,East,Office Supplies,4534.272000,27,United States
+2017-08-01,East,Technology,1530.836000,10,United States
+2017-08-01,South,Furniture,1083.928500,4,United States
+2017-08-01,South,Office Supplies,1143.774000,19,United States
+2017-08-01,South,Technology,822.308000,3,United States
+2017-08-01,West,Furniture,6291.062000,9,United States
+2017-08-01,West,Office Supplies,1451.786000,31,United States
+2017-08-01,West,Technology,4075.004000,14,United States
+2017-09-01,Central,Furniture,8933.453400,21,United States
+2017-09-01,Central,Office Supplies,4175.346000,61,United States
+2017-09-01,Central,Technology,4161.298000,13,United States
+2017-09-01,East,Furniture,6028.317000,26,United States
+2017-09-01,East,Office Supplies,11637.161000,54,United States
+2017-09-01,East,Technology,2533.046000,10,United States
+2017-09-01,South,Furniture,4581.106000,11,United States
+2017-09-01,South,Office Supplies,2793.581000,36,United States
+2017-09-01,South,Technology,4648.764000,11,United States
+2017-09-01,West,Furniture,7212.598500,23,United States
+2017-09-01,West,Office Supplies,4407.314000,72,United States
+2017-09-01,West,Technology,8081.406000,11,United States
+2017-10-01,Central,Furniture,811.774000,9,United States
+2017-10-01,Central,Office Supplies,4619.868000,29,United States
+2017-10-01,Central,Technology,20370.318000,10,United States
+2017-10-01,East,Furniture,5347.681000,14,United States
+2017-10-01,East,Office Supplies,2868.656000,29,United States
+2017-10-01,East,Technology,6849.128000,5,United States
+2017-10-01,South,Furniture,783.128000,8,United States
+2017-10-01,South,Office Supplies,1208.466000,17,United States
+2017-10-01,South,Technology,1099.320000,4,United States
+2017-10-01,West,Furniture,4870.426000,15,United States
+2017-10-01,West,Office Supplies,7539.660000,42,United States
+2017-10-01,West,Technology,3214.608000,10,United States
+2017-11-01,Central,Furniture,8186.694800,19,United States
+2017-11-01,Central,Office Supplies,4393.066000,56,United States
+2017-11-01,Central,Technology,4330.556000,21,United States
+2017-11-01,East,Furniture,6612.935000,21,United States
+2017-11-01,East,Office Supplies,4111.422000,64,United States
+2017-11-01,East,Technology,11912.262000,24,United States
+2017-11-01,South,Furniture,5835.253000,15,United States
+2017-11-01,South,Office Supplies,4230.192000,28,United States
+2017-11-01,South,Technology,5531.110000,10,United States
+2017-11-01,West,Furniture,11148.746000,26,United States
+2017-11-01,West,Office Supplies,7407.128000,64,United States
+2017-11-01,West,Technology,5367.131000,18,United States
+2017-12-01,Central,Furniture,10481.718000,20,United States
+2017-12-01,Central,Office Supplies,11256.023000,29,United States
+2017-12-01,Central,Technology,3597.580000,13,United States
+2017-12-01,East,Furniture,9047.551000,20,United States
+2017-12-01,East,Office Supplies,11608.263000,58,United States
+2017-12-01,East,Technology,6747.766000,12,United States
+2017-12-01,South,Furniture,2683.944000,8,United States
+2017-12-01,South,Office Supplies,5302.324000,26,United States
+2017-12-01,South,Technology,2910.754000,10,United States
+2017-12-01,West,Furniture,14391.752000,34,United States
+2017-12-01,West,Office Supplies,9166.328000,84,United States
+2017-12-01,West,Technology,8545.118000,24,United States
+2018-01-01,Central,Furniture,2196.139000,8,United States
+2018-01-01,Central,Office Supplies,12482.978000,33,United States
+2018-01-01,Central,Technology,6516.639000,8,United States
+2018-01-01,East,Furniture,1213.661000,5,United States
+2018-01-01,East,Office Supplies,2972.215000,14,United States
+2018-01-01,East,Technology,1197.408000,5,United States
+2018-01-01,South,Furniture,481.856000,2,United States
+2018-01-01,South,Office Supplies,578.200000,14,United States
+2018-01-01,South,Technology,3755.534000,4,United States
+2018-01-01,West,Furniture,2038.506000,7,United States
+2018-01-01,West,Office Supplies,5019.586000,32,United States
+2018-01-01,West,Technology,5023.752000,11,United States
+2018-02-01,Central,Furniture,1204.460400,6,United States
+2018-02-01,Central,Office Supplies,1391.346000,15,United States
+2018-02-01,Central,Technology,739.016000,4,United States
+2018-02-01,East,Furniture,1773.896000,5,United States
+2018-02-01,East,Office Supplies,1514.812000,20,United States
+2018-02-01,East,Technology,1679.814000,5,United States
+2018-02-01,South,Furniture,788.674000,3,United States
+2018-02-01,South,Office Supplies,1365.038000,3,United States
+2018-02-01,South,Technology,29.160000,1,United States
+2018-02-01,West,Furniture,3007.347000,11,United States
+2018-02-01,West,Office Supplies,3106.976000,20,United States
+2018-02-01,West,Technology,3320.458000,11,United States
+2018-03-01,Central,Furniture,7286.798800,15,United States
+2018-03-01,Central,Office Supplies,3236.214000,37,United States
+2018-03-01,Central,Technology,4981.566000,12,United States
+2018-03-01,East,Furniture,1579.212000,12,United States
+2018-03-01,East,Office Supplies,2247.632000,32,United States
+2018-03-01,East,Technology,3864.172000,19,United States
+2018-03-01,South,Furniture,353.100000,2,United States
+2018-03-01,South,Office Supplies,2059.420000,20,United States
+2018-03-01,South,Technology,4231.200000,5,United States
+2018-03-01,West,Furniture,1674.334000,9,United States
+2018-03-01,West,Office Supplies,6998.080000,55,United States
+2018-03-01,West,Technology,20351.684000,19,United States
+2018-04-01,Central,Furniture,1179.131600,7,United States
+2018-04-01,Central,Office Supplies,1521.100000,25,United States
+2018-04-01,Central,Technology,682.892000,4,United States
+2018-04-01,East,Furniture,2745.156000,10,United States
+2018-04-01,East,Office Supplies,5471.214000,45,United States
+2018-04-01,East,Technology,1034.910000,6,United States
+2018-04-01,South,Furniture,2846.992500,13,United States
+2018-04-01,South,Office Supplies,4553.877000,27,United States
+2018-04-01,South,Technology,2046.884000,8,United States
+2018-04-01,West,Furniture,2294.678000,14,United States
+2018-04-01,West,Office Supplies,2668.756000,34,United States
+2018-04-01,West,Technology,8496.319000,7,United States
+2018-05-01,Central,Furniture,4559.966200,14,United States
+2018-05-01,Central,Office Supplies,5555.784000,45,United States
+2018-05-01,Central,Technology,1281.136000,7,United States
+2018-05-01,East,Furniture,2419.448000,14,United States
+2018-05-01,East,Office Supplies,2218.583000,31,United States
+2018-05-01,East,Technology,1481.338000,7,United States
+2018-05-01,South,Furniture,7056.576000,10,United States
+2018-05-01,South,Office Supplies,2084.355000,26,United States
+2018-05-01,South,Technology,1802.810000,9,United States
+2018-05-01,West,Furniture,2921.568000,15,United States
+2018-05-01,West,Office Supplies,3635.082000,43,United States
+2018-05-01,West,Technology,8809.336000,19,United States
+2018-06-01,Central,Furniture,3414.885200,12,United States
+2018-06-01,Central,Office Supplies,2353.116000,36,United States
+2018-06-01,Central,Technology,2726.440000,7,United States
+2018-06-01,East,Furniture,4832.552000,13,United States
+2018-06-01,East,Office Supplies,4035.703000,35,United States
+2018-06-01,East,Technology,6049.172000,14,United States
+2018-06-01,South,Furniture,2301.988000,12,United States
+2018-06-01,South,Office Supplies,2497.754000,24,United States
+2018-06-01,South,Technology,4134.178000,9,United States
+2018-06-01,West,Furniture,6482.961500,12,United States
+2018-06-01,West,Office Supplies,5334.528000,48,United States
+2018-06-01,West,Technology,4027.450000,13,United States
+2018-07-01,Central,Furniture,2301.744000,8,United States
+2018-07-01,Central,Office Supplies,4150.816000,35,United States
+2018-07-01,Central,Technology,2418.284000,9,United States
+2018-07-01,East,Furniture,2821.529000,17,United States
+2018-07-01,East,Office Supplies,3226.860000,45,United States
+2018-07-01,East,Technology,6273.434000,18,United States
+2018-07-01,South,Furniture,1565.686000,8,United States
+2018-07-01,South,Office Supplies,651.858000,10,United States
+2018-07-01,South,Technology,647.354000,5,United States
+2018-07-01,West,Furniture,4686.863000,17,United States
+2018-07-01,West,Office Supplies,2209.822000,34,United States
+2018-07-01,West,Technology,13870.854000,17,United States
+2018-08-01,Central,Furniture,461.008000,5,United States
+2018-08-01,Central,Office Supplies,2344.942000,33,United States
+2018-08-01,Central,Technology,3447.044000,8,United States
+2018-08-01,East,Furniture,8848.094000,11,United States
+2018-08-01,East,Office Supplies,9539.954000,30,United States
+2018-08-01,East,Technology,2353.898000,5,United States
+2018-08-01,South,Furniture,1485.956000,6,United States
+2018-08-01,South,Office Supplies,3298.146000,20,United States
+2018-08-01,South,Technology,5587.432000,8,United States
+2018-08-01,West,Furniture,4624.064000,16,United States
+2018-08-01,West,Office Supplies,14616.522000,57,United States
+2018-08-01,West,Technology,6230.788000,15,United States
+2018-09-01,Central,Furniture,5034.307000,13,United States
+2018-09-01,Central,Office Supplies,4572.416000,56,United States
+2018-09-01,Central,Technology,7736.274000,21,United States
+2018-09-01,East,Furniture,10993.651000,30,United States
+2018-09-01,East,Office Supplies,8761.802000,83,United States
+2018-09-01,East,Technology,11764.701000,35,United States
+2018-09-01,South,Furniture,1309.200000,6,United States
+2018-09-01,South,Office Supplies,7391.076000,48,United States
+2018-09-01,South,Technology,1482.244000,9,United States
+2018-09-01,West,Furniture,11179.548000,33,United States
+2018-09-01,West,Office Supplies,10882.229000,94,United States
+2018-09-01,West,Technology,5045.440000,25,United States
+2018-10-01,Central,Furniture,3350.698200,14,United States
+2018-10-01,Central,Office Supplies,4318.864000,39,United States
+2018-10-01,Central,Technology,4143.286000,12,United States
+2018-10-01,East,Furniture,5788.802000,18,United States
+2018-10-01,East,Office Supplies,3566.644000,47,United States
+2018-10-01,East,Technology,22939.794000,18,United States
+2018-10-01,South,Furniture,7142.368000,14,United States
+2018-10-01,South,Office Supplies,3873.807000,33,United States
+2018-10-01,South,Technology,1120.776000,4,United States
+2018-10-01,West,Furniture,5602.200000,25,United States
+2018-10-01,West,Office Supplies,10949.085000,47,United States
+2018-10-01,West,Technology,4651.807000,23,United States
+2018-11-01,Central,Furniture,5068.496000,23,United States
+2018-11-01,Central,Office Supplies,6016.676000,69,United States
+2018-11-01,Central,Technology,4069.806000,15,United States
+2018-11-01,East,Furniture,10882.994000,29,United States
+2018-11-01,East,Office Supplies,12166.422000,69,United States
+2018-11-01,East,Technology,22584.223000,31,United States
+2018-11-01,South,Furniture,6950.546000,15,United States
+2018-11-01,South,Office Supplies,6310.291000,51,United States
+2018-11-01,South,Technology,15170.494000,16,United States
+2018-11-01,West,Furniture,14154.679000,32,United States
+2018-11-01,West,Office Supplies,6978.948000,78,United States
+2018-11-01,West,Technology,7584.580000,28,United States
+2018-12-01,Central,Furniture,6504.886800,21,United States
+2018-12-01,Central,Office Supplies,7870.802000,66,United States
+2018-12-01,Central,Technology,4507.382000,15,United States
+2018-12-01,East,Furniture,6954.866000,33,United States
+2018-12-01,East,Office Supplies,7433.380000,76,United States
+2018-12-01,East,Technology,4897.240000,21,United States
+2018-12-01,South,Furniture,5585.283000,16,United States
+2018-12-01,South,Office Supplies,5108.690000,36,United States
+2018-12-01,South,Technology,4515.764000,16,United States
+2018-12-01,West,Furniture,12362.431000,36,United States
+2018-12-01,West,Office Supplies,9225.140000,100,United States
+2018-12-01,West,Technology,8064.524000,23,United States

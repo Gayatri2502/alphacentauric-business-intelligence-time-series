@@ -1,0 +1,20 @@
+const {test,expect}=require('@playwright/test');
+test('Kaggle: inspect, review, forecast, interact, export, save and restore',async({page})=>{
+ const errors=[];page.on('pageerror',e=>errors.push(e.message));
+ await page.goto('/');await page.locator('#kaggle-sample').click();
+ await expect(page.locator('#upload-status')).toContainText('Kaggle retail data loaded',{timeout:45000});
+ await page.locator('#model').selectOption('SARIMA');await page.locator('#horizon').fill('6');
+ await page.locator('#review-button').click();await expect(page.locator('#accept-review')).toBeEnabled();await page.locator('#accept-review').check();
+ page.once('dialog',dialog=>dialog.accept('Kaggle retail investigation'));await page.locator('#save-project').click();await expect(page.locator('#project-status')).toContainText('saved');
+ await page.locator('#run').click();await expect(page.locator('#run-status')).toContainText('Report ready',{timeout:90000});
+ await expect(page.locator('.interactive-chart')).toHaveCount(6);
+ await page.locator('.expand-chart').first().click();await expect(page.locator('dialog[open]')).toBeVisible();await page.keyboard.press('Escape');
+ const download=page.waitForEvent('download');await page.getByRole('link',{name:'PDF report',exact:true}).click();const d=await download;expect(d.suggestedFilename()).toBe('report.pdf');expect(await d.failure()).toBeNull();
+ await page.screenshot({path:'playwright-results/desktop.png',fullPage:true});
+ await page.reload();await page.locator('#open-library').click();await expect(page.locator('[data-project]')).toHaveCount(1);await expect(page.locator('[data-report]')).toHaveCount(1);
+ await page.locator('[data-report]').first().click();await expect(page.locator('.interactive-chart')).toHaveCount(6);
+ await page.getByText('Edit analyst commentary',{exact:true}).click();await page.locator('#analyst-notes').fill('Historical Kaggle retail sample. Not current market advice.');await page.locator('#save-notes').click();await expect(page.locator('#notes-status')).toContainText('Forecast values are unchanged',{timeout:90000});
+ await page.setViewportSize({width:390,height:844});await page.screenshot({path:'playwright-results/mobile.png',fullPage:true});
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2)).toBeTruthy();
+ expect(errors).toEqual([]);
+});
