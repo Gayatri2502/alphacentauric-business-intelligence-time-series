@@ -1,0 +1,39 @@
+name: Docker and R report verification
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  docker-and-r:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements.txt
+      - run: python tools/smoke_report.py /tmp/bi-r-evidence
+      - name: Install R report tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends r-base r-cran-jsonlite r-cran-rmarkdown pandoc
+      - name: Execute R checks and knit report
+        working-directory: /tmp/bi-r-evidence
+        run: |
+          Rscript -e 'source("verification.R"); stopifnot(all(checks$passed))'
+          Rscript -e 'rmarkdown::render("report.Rmd", output_file="knitted-report.html", quiet=TRUE); stopifnot(file.exists("knitted-report.html"))'
+      - name: Verify Compose and run container
+        run: |
+          docker compose config --quiet
+          docker build -f deploy/Dockerfile -t alphacentauric-bi:ci .
+          docker run -d --name bi-ci -p 8016:8000 alphacentauric-bi:ci
+          for attempt in $(seq 1 45); do
+            if curl --fail --silent http://127.0.0.1:8016/healthz; then break; fi
+            sleep 1
+          done
+          curl --fail http://127.0.0.1:8016/healthz
+          curl --fail http://127.0.0.1:8016/api/kaggle
+          docker logs bi-ci

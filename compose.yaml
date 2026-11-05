@@ -4,10 +4,10 @@ services:
       context: .
       dockerfile: deploy/Dockerfile
     ports:
-      - "127.0.0.1:${BI_PORT:-8000}:${BI_PORT:-8000}"
+      - "127.0.0.1:${BI_PORT:-8000}:8000"
     environment:
       BI_BIND_HOST: "0.0.0.0"
-      BI_PORT: "${BI_PORT:-8000}"
+      BI_PORT: "8000"
       BI_DATA_DIR: "/app/var"
     volumes:
       - bi-data:/app/var

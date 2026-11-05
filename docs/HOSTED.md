@@ -123,6 +123,14 @@ flowchart TD
 
 No server library is shared between visitors. Browser state is isolated by browser profile/origin, not by a cloud account. Other people using the same browser profile can see its saved data. Uploads are transmitted to the server for computation; avoid sensitive records unless the deployment's privacy terms and controls are appropriate.
 
+## Docker execution
+
+```sh
+docker compose up --build
+```
+
+Open `http://127.0.0.1:8000`. Docker serves the same stateless/browser-library architecture as Vercel using Uvicorn. Set `BI_PORT` to change the host port; the container always listens on 8000. The named data volume remains available for operators who explicitly select local/server mode, but the default hosted application stores projects in the browser. This fixes the earlier container startup conflict between non-loopback binding and local account requirements.
+
 ## Tests and release process
 
 ```sh
